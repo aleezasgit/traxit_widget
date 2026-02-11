@@ -1,21 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:traxit_app/router/routes.dart';
-import 'package:traxit_app/screens/forgot_password/forgot_password.dart';
-import 'package:traxit_app/screens/link_sent/link_sent.dart';
-import 'package:traxit_app/screens/onboarding/onboarding.dart';
-import 'package:traxit_app/screens/reset_password/reset_password.dart';
-import 'package:traxit_app/screens/sign_in/sign_in.dart';
-import 'package:traxit_app/screens/sign_up/sign_up.dart';
-import 'package:traxit_app/screens/splash/splash.dart';
+import 'package:traxit/router/routes.dart';
+import 'package:traxit/screens/pract.dart';
 
 final Map<String, Widget Function(dynamic)> appRoutes = {
   AppRoutes.splash: (_) => const SplashScreen(),
-  AppRoutes.onBoarding: (_) => const OnboardingScreen(),
-  AppRoutes.signIn: (_) => const SignInScreen(),
-  AppRoutes.signUp: (_) => const SignUpScreen(),
-  AppRoutes.forgotPassword: (_) => const ForgotPasswordScreen(),
-  AppRoutes.linkSent: (_) => const LinkSentScreen(),
-  AppRoutes.resetPassword: (_) => const ResetPasswordScreen(),
+
 };
 
 void navigateToScreen(BuildContext context, Widget screen) {
