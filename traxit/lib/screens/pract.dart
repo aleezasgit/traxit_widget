@@ -10,12 +10,13 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    UI.init(context);
-    AppTheme.init(context);
-    AppDimensions.init();
-    AppText.init(context);
-    UIProps.init(context);
-    Space.init(context);
+    // UI.init(context);
+    // AppTheme.init(context);
+    // AppDimensions.init();
+    // AppText.init(context);
+    // UIProps.init(context);
+    // Space.init(context);
+    App.init(context);
     return Scaffold(
      
       

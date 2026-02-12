@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:traxit/configs/configs.dart';
+import 'package:traxit/screens/widget/arrow.dart';
 
 class StudentCard extends StatelessWidget {
   final String name;
@@ -19,7 +20,7 @@ class StudentCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: Space.hf(8.w).add(Space.vf(8.h),),
+        padding: Space.hf(8.w).add(Space.vf(12.h),),//.all(v,h)
         
         decoration: BoxDecoration(
           color: AppTheme.c.white,
@@ -34,7 +35,7 @@ class StudentCard extends StatelessWidget {
               child: Image.asset(
                 'assets/pngs/OB_1.png',
                 width: 50.w,
-              // height: 50.h,
+                height: 50.h,
                 fit: BoxFit.cover,
               ),
             ),
@@ -62,23 +63,9 @@ class StudentCard extends StatelessWidget {
               ),
             ),
 
-          
+          Arrow(),
 
-            Container(
-           // padding: Space.all(7.2.w),
-              padding: Space.all(7.2.w),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppTheme.c.primary.shade100,
-              ),
-              child: Center(
-                child: Image.asset(
-                  'assets/pngs/arrow-narrow-right.png',
-                  width: 18.w,
-                  height: 18.h,
-                ),
-              ),
-            ),
+           
           ],
         ),
       ),

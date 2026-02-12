@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:traxit/configs/configs.dart';
+import 'package:traxit/screens/widget/arrow.dart';
 
 class ShortLapCard extends StatelessWidget {
   final String date;
@@ -44,9 +45,10 @@ class ShortLapCard extends StatelessWidget {
                   /// Date Row
                   Row(
                     //crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Image.asset(
-                        'assets/pngs/44 calendar.png',
+                        'assets/pngs/44 calendar.png',//svg
                         width: 20.w,
                         height: 20.h,
                       ),
@@ -105,24 +107,25 @@ class ShortLapCard extends StatelessWidget {
             ),
       
             /// Arrow Button
-            Container(
-              padding: Space.all(7.2.w),
+            /// //custom
+            // Container(
 
-            //  padding: EdgeInsets.only(top: 24.h,bottom: 24.h,left: 80.w,right: 0.w),
-              // height: 32.h,
-              // width: 32.w,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppTheme.c.primary.shade100,
-              ),
-              child: Center(
-                child: Image.asset(
-                  'assets/pngs/arrow-narrow-right.png',
-                  width: 18.w,
-                  height: 18.h,
-                ),
-              ),
-            ),
+            //   height: 32.h,
+            //   width: 32.w,
+            //   decoration: BoxDecoration(
+            //     shape: BoxShape.circle,
+            //     color: AppTheme.c.primary.shade100,
+            //   ),
+            //   child: Center(
+            //     child: Image.asset(
+            //       'assets/pngs/arrow-narrow-right.png',
+            //       width: 18.w,
+            //       height: 18.h,
+            //     ),
+            //   ),
+            // ),
+
+            Arrow(),
           ],
         ),
       ),

@@ -79,11 +79,11 @@ class Penalty extends StatelessWidget {
           /// Penalty 
          
             Container(
-              padding: Space.hf(8.w).add(Space.vf(4.h)
+              padding: Space.hf(8.w).add(Space.vf(4.h)//.all jira
               ),
               decoration: BoxDecoration(
                 color: AppTheme.c.error.shade100,
-                borderRadius: BorderRadius.circular(12.r),
+                borderRadius: BorderRadius.circular(24.r),
               ),
               child: Text(
                 "Penalty",
