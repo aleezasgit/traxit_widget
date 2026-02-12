@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:traxit/configs/configs.dart';
 import 'package:traxit/screens/widget/arrow.dart';
 
@@ -31,6 +32,7 @@ class ShortLapCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppTheme.c.white,
           borderRadius: BorderRadius.circular(16.r),
+            border: Border.all(width: 1.w,color: AppTheme.c.lightGrey.main!)
          // boxShadow: UIProps.cardShadow,
         ),
         child: Row(
@@ -47,8 +49,8 @@ class ShortLapCard extends StatelessWidget {
                     //crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/pngs/44 calendar.png',//svg
+                      SvgPicture.asset(
+                        'assets/svgs/44 calendar.svg',//svg
                         width: 20.w,
                         height: 20.h,
                       ),
@@ -74,8 +76,8 @@ class ShortLapCard extends StatelessWidget {
                   /// Duration + Students
                   Row(
                     children: [
-                      Image.asset(
-                        'assets/pngs/clock-02.png',
+                     SvgPicture.asset(
+                        'assets/svgs/clock-02.svg',
                         width: 20.w,
                         height: 20.h,
                       ),
@@ -88,8 +90,8 @@ class ShortLapCard extends StatelessWidget {
       
                       Space.xf(20),
       
-                      Image.asset(
-                        'assets/pngs/users-03.png',
+                     SvgPicture.asset(
+                        'assets/svgs/users-03.svg',
                         width: 18.w,
                         height: 18.h,
                       ),
@@ -105,25 +107,7 @@ class ShortLapCard extends StatelessWidget {
                 ],
               ),
             ),
-      
-            /// Arrow Button
-            /// //custom
-            // Container(
-
-            //   height: 32.h,
-            //   width: 32.w,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.circle,
-            //     color: AppTheme.c.primary.shade100,
-            //   ),
-            //   child: Center(
-            //     child: Image.asset(
-            //       'assets/pngs/arrow-narrow-right.png',
-            //       width: 18.w,
-            //       height: 18.h,
-            //     ),
-            //   ),
-            // ),
+ 
 
             Arrow(),
           ],

@@ -45,7 +45,7 @@ class AppTheme {
       shade800: const Color(0xFF1B1D1F), //
     ),
 
-    // LIGHT GREY group
+    // LIGHT GREY group#E8E9EC
     lightGrey: ColorShades(
       main: const Color(0xFFE8E9EC), // lightGrey
       shade300: const Color(0xFFECEFF3), //

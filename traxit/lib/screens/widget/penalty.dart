@@ -28,6 +28,7 @@ class Penalty extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.c.white,
         borderRadius: BorderRadius.circular(16.r),
+          border: Border.all(width: 1.w,color: AppTheme.c.lightGrey.main!)
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,8 +80,9 @@ class Penalty extends StatelessWidget {
           /// Penalty 
          
             Container(
-              padding: Space.hf(8.w).add(Space.vf(4.h)//.all jira
-              ),
+           
+              padding: Space.all(8.w),
+              
               decoration: BoxDecoration(
                 color: AppTheme.c.error.shade100,
                 borderRadius: BorderRadius.circular(24.r),

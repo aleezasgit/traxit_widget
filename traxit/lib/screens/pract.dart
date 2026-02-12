@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:traxit/configs/configs.dart';
+import 'package:traxit/screens/widget/course_card.dart';
 import 'package:traxit/screens/widget/penalty.dart';
 import 'package:traxit/screens/widget/short_lap.dart';
 import 'package:traxit/screens/widget/student_card.dart';
@@ -53,8 +54,16 @@ class SplashScreen extends StatelessWidget {
             Penalty(name: 'Cody',
              completionTime: 'Completion time: 1h 15min',
               showPenalty: 'over time: 1h 15min',
-              overtime: '1hr 4mins')
+              overtime: '1hr 4mins'),
+
+              Space.yf(10),
             
+                CourseCard(
+               title: "Daily Focus Builder",
+               description:
+      "Strengthen your concentration and build a habit of focused, distraction-free work every day.",
+              duration: "1h 30min",
+),
 
                 
             ],

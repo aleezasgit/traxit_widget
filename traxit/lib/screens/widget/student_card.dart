@@ -20,11 +20,12 @@ class StudentCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: Space.hf(8.w).add(Space.vf(12.h),),//.all(v,h)
-        
+       
+        padding:Space.all(12.h,8.w),
         decoration: BoxDecoration(
           color: AppTheme.c.white,
           borderRadius: BorderRadius.circular(16.r),
+            border: Border.all(width: 1.w,color: AppTheme.c.lightGrey.main!)
        
         ),
         child: Row(
