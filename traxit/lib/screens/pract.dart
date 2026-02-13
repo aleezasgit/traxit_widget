@@ -5,18 +5,14 @@ import 'package:traxit/screens/widget/penalty.dart';
 import 'package:traxit/screens/widget/short_lap.dart';
 import 'package:traxit/screens/widget/student_card.dart';
 import 'package:traxit/screens/widget/penalty.dart';
+import 'package:traxit/screens/widget/time_based.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // UI.init(context);
-    // AppTheme.init(context);
-    // AppDimensions.init();
-    // AppText.init(context);
-    // UIProps.init(context);
-    // Space.init(context);
+
     App.init(context);
     return Scaffold(
      
@@ -64,6 +60,35 @@ class SplashScreen extends StatelessWidget {
       "Strengthen your concentration and build a habit of focused, distraction-free work every day.",
               duration: "1h 30min",
 ),
+
+  TimeBasedPenaltiesContainer(
+  title: "Time-Based Penalties",
+  items: [
+    PenaltyItem(
+      title: "Overtime (per lap)",
+      subtitle: "Every 30s past target time",
+      points: "5",
+    ),
+    PenaltyItem(
+      title: "Limit Exceeded",
+      subtitle: "More than 5 mins overtime",
+      points: "-10 ",
+     
+    ),
+    PenaltyItem(
+      title: "Overtime (per lap)",
+      subtitle: "Every 30s past target time",
+      points: "-5",
+    ),
+    PenaltyItem(
+      title: "Overtime (per lap)",
+      subtitle: "Every 30s past target time",
+      points: "-5",
+    ),
+  ],
+),
+
+   
 
                 
             ],
