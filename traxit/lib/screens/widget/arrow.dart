@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:traxit/configs/configs.dart';
 
 class Arrow extends StatelessWidget {
@@ -16,8 +17,8 @@ class Arrow extends StatelessWidget {
                 color: AppTheme.c.primary.shade100,
               ),
               child: Center(
-                child: Image.asset(
-                  'assets/pngs/arrow-narrow-right.png',
+                child: SvgPicture.asset(
+                  'assets/svgs/arrow-narrow-right.svg',
                   width: 18.w,
                   height: 18.h,
                 ),

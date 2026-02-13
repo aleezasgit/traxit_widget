@@ -86,22 +86,23 @@ class CourseCard extends StatelessWidget {
 
           /// Bottom Stats Container
           Container(
-           padding: Space.all(8.w,30.h), 
-            // height: 49.h,
-            // width: double.infinity,
+           padding: Space.all(30.5,8), 
+     
             decoration: BoxDecoration(
               color: AppTheme.c.background.main,
               borderRadius: BorderRadius.circular(16.r),
               border: Border.all(width: 1,color: AppTheme.c.lightGrey.main!),
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        
               children: [
 
                 /// Item 1
-                _StatItem(
-                  value: "52 m",
-                  title: "Distance",
+                Expanded(
+                  child: _StatItem(
+                    value: "52 m",
+                    title: "Distance",
+                  ),
                 ),
                 Space.xf(32),
 
@@ -109,9 +110,11 @@ class CourseCard extends StatelessWidget {
                 Space.xf(32),
 
                 /// Item 2
-                _StatItem(
-                  value: "10",
-                  title: "Points",
+                Expanded(
+                  child: _StatItem(
+                    value: "10",
+                    title: "Points",
+                  ),
                 ),
                 Space.xf(32),
 
@@ -119,9 +122,11 @@ class CourseCard extends StatelessWidget {
                 Space.xf(32),
 
                 /// Item 3
-                _StatItem(
-                  value: "10",
-                  title: "Laps",
+                Expanded(
+                  child: _StatItem(
+                    value: "10",
+                    title: "Laps",
+                  ),
                 ),
               ],
             ),

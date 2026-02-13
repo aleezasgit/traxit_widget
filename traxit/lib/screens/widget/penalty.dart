@@ -22,13 +22,13 @@ class Penalty extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: Space.all(8.w),
+      padding: Space.all(8),
       
       
       decoration: BoxDecoration(
         color: AppTheme.c.white,
         borderRadius: BorderRadius.circular(16.r),
-          border: Border.all(width: 1.w,color: AppTheme.c.lightGrey.main!)
+        
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,11 +77,11 @@ class Penalty extends StatelessWidget {
             ),
           ),
     
-          /// Penalty 
+          /// Penalty //arrow svg padding jira
          
             Container(
            
-              padding: Space.all(8.w),
+              padding: Space.all(8,4),
               
               decoration: BoxDecoration(
                 color: AppTheme.c.error.shade100,
