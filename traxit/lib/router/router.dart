@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:traxit/router/routes.dart';
+import 'package:traxit/screens/policy.dart';
 import 'package:traxit/screens/pract.dart';
+import 'package:traxit/screens/policy.dart';
 
 final Map<String, Widget Function(dynamic)> appRoutes = {
   AppRoutes.splash: (_) => const SplashScreen(),
+  AppRoutes.PrivacyPolicyScreen: (_) => const PrivacyPolicyScreen(),
 
 };
 

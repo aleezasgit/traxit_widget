@@ -1,5 +1,8 @@
+import 'package:traxit/screens/policy.dart';
+
 abstract class AppRoutes {
   static const splash = '/splash';
+  static const PrivacyPolicyScreen = '/privacy';
   static const onBoarding = '/onboarding';
   static const signIn = '/sign-in';
   static const signUp = '/sign-up';

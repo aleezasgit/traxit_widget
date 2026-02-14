@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:traxit/configs/configs.dart';
+import 'package:traxit/router/router.dart';
+import 'package:traxit/screens/policy.dart';
 import 'package:traxit/screens/widget/course_card.dart';
 import 'package:traxit/screens/widget/penalty.dart';
 import 'package:traxit/screens/widget/short_lap.dart';
 import 'package:traxit/screens/widget/student_card.dart';
 import 'package:traxit/screens/widget/penalty.dart';
 import 'package:traxit/screens/widget/time_based.dart';
+import 'package:traxit/screens/widget/grade_breakdown.dart';
+import 'package:traxit/screens/policy.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -60,6 +64,8 @@ class SplashScreen extends StatelessWidget {
       "Strengthen your concentration and build a habit of focused, distraction-free work every day.",
               duration: "1h 30min",
 ),
+Space.yf(10),
+
 
   TimeBasedPenaltiesContainer(
   title: "Time-Based Penalties",
@@ -85,8 +91,32 @@ class SplashScreen extends StatelessWidget {
       subtitle: "Every 30s past target time",
       points: "-5",
     ),
+
+
   ],
 ),
+Space.yf(10),
+    StudentResultCard(
+  name: 'Cody Fisher',
+  average: 92,
+  points: 95,
+  grade: 'A',
+  progress: 0.50,
+  onTap: () {},
+),
+
+      GestureDetector(
+        onTap: () {
+          navigateToScreen(context, PrivacyPolicyScreen());
+        },
+        child: Container(
+          color: AppTheme.c.purple,
+          width: double.infinity,
+          
+            
+        ),
+      )
+
 
    
 

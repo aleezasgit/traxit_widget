@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:traxit/screens/policy.dart';
 import 'package:traxit/screens/pract.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SplashScreen(),
+      home: PrivacyPolicyScreen(),
     );
   }
 }
