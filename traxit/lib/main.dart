@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:traxit/screens/policy.dart';
 import 'package:traxit/screens/pract.dart';
+import 'package:traxit/screens/terms_condition.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: PrivacyPolicyScreen(),
+      home: TermsConditionsScreen(),
     );
   }
 }

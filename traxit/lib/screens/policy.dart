@@ -17,12 +17,14 @@ class PrivacyPolicyScreen extends StatelessWidget {
         title: 'Privacy policy',
       ),
       body: SingleChildScrollView(
-        padding: Space.hf(24) ,
+        
+       // padding: Space.hf(24) ,
         
       
         child: Container(
+          padding: Space.hf(24),
           decoration: BoxDecoration(
-            color:  AppTheme.c.background.shade400
+            color:  AppTheme.c.background.main
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +36,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                     'We collect information that helps us provide a better app experience. This includes personal details like your name, email, and profile information, as well as health or activity data you choose to share, such as laps, heart rate, or completion time. We also collect usage and device data to help improve performance, troubleshoot issues, and enhance app functionality.',
               ),
           
-              Space.yf(20),
+              Space.yf(16),
           
               _policySection(
                 title: 'How We Use Your Information',
@@ -42,16 +44,24 @@ class PrivacyPolicyScreen extends StatelessWidget {
                     'The information we collect is used to deliver, personalize, and improve app features. Your activity and progress data allow us to provide meaningful insights and track your performance. Additionally, we may use your information to send important updates, ensure security, and prevent misuse of the app.',
               ),
           
-              Space.yf(20),
+              Space.yf(16),
           
               _policySection(
                 title: 'Data Sharing',
                 description:
                     'We do not sell your personal information to third parties. Your data may only be shared with trusted service providers who assist in operating the app, or if required by law to ensure safety and compliance. Any sharing of information always follows strict privacy standards and is limited to what is necessary.',
               ),
+              // GestureDetector(
+              //   onTap: Navigator.new,
+              //   child: Container(
+              //     color: AppTheme.c.purple,
+              //   ),
+              // )
             ],
+         
           ),
         ),
+      
       ),
     );
   }
@@ -69,22 +79,22 @@ class PrivacyPolicyScreen extends StatelessWidget {
           style: AppText.b1bm?.w(6),
         ),
 
-        Space.yf(10),
+        Space.yf(6),
 
         Container(
-          padding: EdgeInsets.all(16.w),
+          padding:Space.all(12) ,
           decoration: BoxDecoration(
-            color: AppTheme.c.lightGrey.shade100,
-            borderRadius: BorderRadius.circular(12.r),
+             color: AppTheme.c.white!,
+            borderRadius: BorderRadius.circular(10.r),
             border: Border.all(
-              color: AppTheme.c.lightGrey.shade400!,
+              color: AppTheme.c.lightGrey.main!,
               width: 1.w,
             ),
           ),
           child: Text(
             description,
-            style: AppText.b2
-                ?.cl(AppTheme.c.text.main!),
+            style: AppText.b1
+                ?.w(4).cl(AppTheme.c.text.main!),
           ),
         ),
       ],
