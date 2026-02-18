@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:traxit/Profile_screen/profile.dart';
+import 'package:traxit/screens/edit_profile/edit_profile.dart';
 import 'package:traxit/screens/policy.dart';
 import 'package:traxit/screens/pract.dart';
 import 'package:traxit/screens/terms_condition.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ProfileScreen(),
+      home: EditProfile(),
     );
   }
 }
